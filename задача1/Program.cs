@@ -6,11 +6,11 @@ Console.Clear();
 Console.WriteLine("Введите пятизначное число n: ");
 int n = int.Parse(Console.ReadLine());
 int a = n / 10;
-int b = n - a*10;
-int c = a / 1000;
-int d = a % 10;
-int f = (a % 1000)/100;
-if (b == c && d == f)
+int n5 = n % 10;
+int n1 = a / 1000;
+int n4 = a % 10;
+int n2 = (a % 1000)/100;
+if (n1 == n5 && n2 == n4)
 {
     Console.WriteLine($"Число {n} является палиндромом");
 }
